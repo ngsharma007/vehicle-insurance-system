@@ -1,0 +1,99 @@
+
+TABLE -1[Customer_Registration]
+
+
+Create table Customer_Registration(Name varchar2(20),Password varchar2(20),Address varchar2(20),City varchar2(20),State varchar2(20),Country varchar2(20),Pin_code varchar2(20),Email
+varchar2(20),Gender varchar2(20),Contact_No varchar2(20),DOB varchar2(20),U_ID varchar2(20));
+insert into Customer_Registration values('admin','admin',null,null,null,null,null,null,null,null,null,'admin');
+______________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________
+
+
+
+TABLE-2[Customer_Id]
+
+Create table Customer_Id(U_ID varchar2(20));
+insert into Customer_Id values('0000');
+_____________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+TABLE-3[Vehicle_Registration]
+
+create table Vehicle_Registration(
+vr_owner_name varchar2(20),
+vr_state varchar2(20),
+vr_vehicle_type varchar2(20),
+vr_manufacturer varchar2(20),
+vr_model varchar2(20),
+vr_engine_number varchar2(20),
+vr_yom varchar2(20),
+vr_location varchar2(20),
+vr_price float(20),
+vr_dop varchar2(20),
+p_id varchar2(20),
+premium_amount float(20),
+maturity_date varchar2(20),
+vr_status_report varchar(20),
+U_Id varchar2(20));
+
+insert into Vehicle_Registration values('ankit','jh','tw','honda','suv','ea121',null,'kp','1000',null,'TW171000','100',null,null,null);
+
+
+select * from Customer_Registration;
+
+select * from Vehicle_Registration;
+
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+
+TABLE-4[claim_policy]
+
+create table claim_policy(policy_id varchar2(20),claim_type varchar2(20),claim_status varchar2(20),
+U_ID varchar2(20));
+
+__________________________________________________________________________________________________________________
+
+TABLE-5[Direct_Pay_Premium]
+
+
+create table Direct_Pay_Premium(policy_id varchar2(40) ,amount varchar2(40),pay varchar2(40),cn_number varchar2(40));
+  desc  Direct_Pay_Premium;
+
+
+
+select * FROM Direct_Pay_Premium;
+_____________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________
+
+
+TABLE-6[Admin]
+
+create table Admin(U_ID varchar2(20),PASSWORD VARCHAR2(20));
+
+insert into Admin values('system1','password1$');
+insert into Admin values('system2','password2$');
+insert into Admin values('system3','password3$');
+insert into Admin values('system4','password4$');
+
+select * from Admin;
+
+_________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+
+HOME-PAGE LINK
+
+
+
+http://localhost:7450/idp/HomePage.jsp
+
+_____________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
